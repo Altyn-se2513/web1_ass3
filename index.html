@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home — Digital Book Collection</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-grid">
+
+    <header id="main-header">
+      <div class="logo">Book Collection</div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="2catalog.html">Catalog</a></li>
+          <li><a href="3product.html">Book Details</a></li>
+          <li><a href="4about.html">About Us</a></li>
+          <li><a href="5prices.html">Pricing</a></li>
+          <li><a href="6contact.html">Contact Us</a></li>
+          <li><a href="7account.html">My Account</a></li>
+          <li><a href="8reader.html">Read</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside class="sidebar">
+      <div class="sidebar-block">
+        <h3>Featured Authors</h3>
+        <ul>
+          <li><a href="#authors">F. Scott Fitzgerald</a></li>
+          <li><a href="#authors">George Orwell</a></li>
+          <li><a href="#authors">J.R.R. Tolkien</a></li>
+          <li><a href="#authors">Jane Austen</a></li>
+          <li><a href="#authors">Tolstoy &amp; Dostoevsky</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-block">
+        <h3>Newsletter</h3>
+        <p style="font-size:.86rem;">Get weekly picks in your inbox.</p>
+        <form id="newsletter-form" action="#" method="post" style="padding:0; border:none; box-shadow:none; margin:0; max-width:none;">
+          <input type="email" placeholder="you@example.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="sidebar-block">
+        <h3>Start Reading 🔥</h3>
+        <p style="font-size:.86rem;">Log 20 min/day and grow your streak.</p>
+        <a href="7account.html" style="font-size:.85rem; font-weight:600;">Open My Account →</a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <p class="breadcrumb"><a href="index.html">Home</a> / <span>Welcome</span></p>
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-img">
+          <img src="imgs/cat.jpg" alt="Library mascot cat in the bookstore welcome section">
+        </div>
+        <div class="hero-text">
+          <h1>Welcome to Our Digital Book Collection</h1>
+          <p>Discover your next favorite read in our curated collection of classic and modern literature. We bring together iconic masterpieces, modern bestsellers, and timeless stories for every book lover.</p>
+          <div class="hero-actions">
+            <a href="2catalog.html" class="hero-btn primary">Browse Catalog</a>
+            <a href="7account.html" class="hero-btn secondary">🔥 Start Reading Streak</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="card-row">
+        <div class="info-card">
+          <h3>Books Available</h3>
+          <span class="big-number">16</span>
+          <p>Curated titles in this demo catalog.</p>
+        </div>
+        <div class="info-card">
+          <h3>Genres</h3>
+          <span class="big-number">5</span>
+          <p>Classics, sci-fi, fantasy, romance, history.</p>
+        </div>
+        <div class="info-card">
+          <h3>Avg. Rating</h3>
+          <span class="big-number">4.7/5</span>
+          <p>Based on our catalog stats.</p>
+    </div>
+</div>
+
+      <h2>Featured Categories</h2>
+      <ul>
+        <li><a href="2catalog.html#classics">Classic Literature</a></li>
+        <li><a href="2catalog.html#fantasy">Science Fiction &amp; Fantasy</a></li>
+        <li><a href="2catalog.html#history">Biographies &amp; History</a></li>
+        <li><a href="2catalog.html#romance">Modern Bestsellers</a></li>
+      </ul>
+
+      <h2>Popular Picks</h2>
+      <div class="card-row">
+        <div class="card">
+          <img src="imgs/gatsby.jpg" alt="The Great Gatsby book cover">
+          <h3>The Great Gatsby</h3>
+          <p>A haunting story of the Jazz Age and the fragile American Dream.</p>
+          <a href="3product.html#gatsby" class="btn">View Details</a>
+        </div>
+        <div class="card">
+          <img src="imgs/1984.jpg" alt="1984 book cover">
+          <h3>1984</h3>
+          <p>A dystopian novel about total surveillance, truth, and control.</p>
+          <a href="3product.html#1984" class="btn">View Details</a>
+        </div>
+        <div class="card">
+          <img src="imgs/mockingbird.jpg" alt="To Kill a Mockingbird book cover">
+          <h3>To Kill a Mockingbird</h3>
+          <p>A powerful story of justice and inequality in the American South.</p>
+          <a href="3product.html#mockingbird" class="btn">View Details</a>
+        </div>
+        <div class="card">
+          <img src="imgs/hobbit.jpg" alt="The Hobbit book cover">
+          <h3>The Hobbit</h3>
+          <p>An epic fantasy adventure through Middle-earth.</p>
+          <a href="3product.html#hobbit" class="btn">View Details</a>
+        </div>
+      </div>
+
+      <h2 id="authors">Meet Our Authors</h2>
+      <p>Five legendary writers whose stories shaped modern literature. Click any author to browse their books in our catalog.</p>
+
+      <div class="author-grid">
+        <div class="author-card">
+          <h3>F. Scott Fitzgerald</h3>
+          <p class="author-meta">1896–1940 · American</p>
+          <p>Chronicler of the Jazz Age, famous for his lyrical prose and critique of the American Dream.</p>
+          <ul><li>The Great Gatsby</li></ul>
+          <a href="2catalog.html#classics" class="author-link">Browse his books →</a>
+        </div>
+        <div class="author-card">
+          <h3>George Orwell</h3>
+          <p class="author-meta">1903–1950 · British</p>
+          <p>Writer on totalitarianism, truth, and language. His dystopias remain essential reading.</p>
+          <ul><li>1984</li><li>Animal Farm</li></ul>
+          <a href="2catalog.html#scifi" class="author-link">Browse his books →</a>
+        </div>
+        <div class="author-card">
+          <h3>J.R.R. Tolkien</h3>
+          <p class="author-meta">1892–1973 · British</p>
+          <p>Father of modern fantasy. Created Middle-earth, its languages, and its legends.</p>
+          <ul><li>The Hobbit</li><li>The Lord of the Rings</li></ul>
+          <a href="2catalog.html#fantasy" class="author-link">Browse his books →</a>
+        </div>
+        <div class="author-card">
+          <h3>Jane Austen</h3>
+          <p class="author-meta">1775–1817 · British</p>
+          <p>Master of wit and social observation. Her romances dissect class, marriage, and manners.</p>
+          <ul><li>Pride and Prejudice</li></ul>
+          <a href="2catalog.html#romance" class="author-link">Browse her books →</a>
+        </div>
+        <div class="author-card">
+          <h3>Tolstoy &amp; Dostoevsky</h3>
+          <p class="author-meta">19th century · Russian</p>
+          <p>Two giants of Russian literature — one epic and moral, the other psychological and dark.</p>
+          <ul>
+            <li>War and Peace (Tolstoy)</li>
+            <li>Crime and Punishment (Dostoevsky)</li>
+          </ul>
+          <a href="2catalog.html#history" class="author-link">Browse their books →</a>
+        </div>
+      </div>
+
+      <h2>Author Spotlight</h2>
+      <div class="quote-card">
+        <strong>George Orwell</strong> — born 1903, author of <em>1984</em> and <em>Animal Farm</em>. His work explores totalitarianism, truth, and language.
+        <br><a href="2catalog.html#scifi">Browse Orwell's books →</a>
+      </div>
+
+      <h2>Gallery — From Our Shelves</h2>
+      <div class="gallery">
+        <div class="gallery-item"><img src="imgs/cat.jpg" alt="Library mascot cat"><div class="caption">Library Mascot</div></div>
+        <div class="gallery-item"><img src="imgs/gatsby.jpg" alt="The Great Gatsby cover"><div class="caption">The Great Gatsby</div></div>
+        <div class="gallery-item"><img src="imgs/1984.jpg" alt="1984 cover"><div class="caption">1984</div></div>
+        <div class="gallery-item"><img src="imgs/logo.png" alt="Book Collection brand logo"><div class="caption">Our Brand</div></div>
+        <div class="gallery-item"><img src="imgs/hobbit.jpg" alt="The Hobbit cover"><div class="caption">Featured Fantasy</div></div>
+        <div class="gallery-item"><img src="imgs/pride.jpg" alt="Pride and Prejudice cover"><div class="caption">Pride &amp; Prejudice</div></div>
+        <div class="gallery-item"><img src="imgs/contactlogo.jpg" alt="Contact support icon"><div class="caption">Contact Us</div></div>
+        <div class="gallery-item"><img src="imgs/gift_card_logo.png" alt="Gift card option"><div class="caption">Gift Cards</div></div>
+        <div class="gallery-item"><img src="imgs/mockingbird.jpg" alt="To Kill a Mockingbird cover"><div class="caption">Mockingbird</div></div>
+        <div class="gallery-item"><img src="imgs/catcher.jpg" alt="The Catcher in the Rye cover"><div class="caption">Catcher in the Rye</div></div>
+        <div class="gallery-item"><img src="imgs/lotr.jpg" alt="The Lord of the Rings cover"><div class="caption">Lord of the Rings</div></div>
+        <div class="gallery-item"><img src="imgs/harry.jpg" alt="Harry Potter cover"><div class="caption">Harry Potter</div></div>
+      </div>
+
+      <h2>Why Choose Us?</h2>
+      <div class="card-row">
+        <div class="info-card">
+          <h3>Worldwide Library</h3>
+          <p>Thousands of titles across every genre — all in one place.</p>
+        </div>
+        <div class="info-card">
+          <h3>Read Anywhere</h3>
+          <p>Phone, tablet, or laptop — your books follow you everywhere.</p>
+        </div>
+        <div class="info-card">
+          <h3>Audiobooks Included</h3>
+          <p>Switch between reading and listening with one tap.</p>
+        </div>
+      </div>
+
+      <h2>Reading Tips</h2>
+      <ol>
+        <li>Set a daily 20-minute reading goal.</li>
+        <li>Keep a small "to-read" list — no more than 5 titles.</li>
+        <li>Alternate between fiction and non-fiction.</li>
+        <li>Write a 3-line summary after each chapter.</li>
+      </ol>
+
+      <h2>Track Your Reading Streak 🔥</h2>
+      <div class="streak-hero">
+        <div class="streak-hero-flame">🔥</div>
+        <div class="streak-hero-count">
+          <span id="hero-streak-preview">0</span> day streak
+        </div>
+        <a href="7account.html" class="btn" style="margin-left:auto; padding:12px 22px; font-size:1rem;">Open My Account →</a>
+      </div>
+      <p>Log 20 minutes of reading each day to keep the flame alive. Duolingo-style, but for books.</p>
+
+      <h2>What Our Readers Say</h2>
+      <div class="card-row">
+        <div class="info-card">
+          <p>"An absolute must-have for any book lover. I found so many hidden gems!"</p>
+          <p><strong>— Emma R.</strong></p>
+        </div>
+        <div class="info-card">
+          <p>"Clean interface, fast search, and great recommendations. Five stars."</p>
+          <p><strong>— Daniel K.</strong></p>
+        </div>
+        <div class="info-card">
+          <p>"The audiobook library got me through my commute every single day."</p>
+          <p><strong>— Sofia M.</strong></p>
+        </div>
+      </div>
+
+      <div class="quote-card">
+        "A reader lives a thousand lives before he dies." — George R.R. Martin
+      </div>
+
+      <div class="see-also">
+        <h3>See Also</h3>
+        <ul>
+          <li><a href="2catalog.html">Browse the full catalog</a></li>
+          <li><a href="3product.html">Read book details and quotes</a></li>
+          <li><a href="5prices.html">Compare membership plans</a></li>
+          <li><a href="6contact.html">Contact our support team</a></li>
+          <li><a href="7account.html">Start tracking your reading streak</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <p>Team Members:</p>
+      <ul><li>Altyn Abdinurova</li></ul>
+    </footer>
+
+  </div>
+  <script>
+    try {
+      const days = JSON.parse(localStorage.getItem('bc_readDays') || '[]');
+      const set = new Set(days);
+      let current = 0;
+      let d = new Date();
+      if (!set.has(d.toISOString().slice(0, 10))) d.setDate(d.getDate() - 1);
+      while (set.has(d.toISOString().slice(0, 10))) {
+        current++;
+        d.setDate(d.getDate() - 1);
+      }
+      const el = document.getElementById('hero-streak-preview');
+      if (el) el.textContent = current;
+    } catch (e) {}
+  </script>
+  <script>
+  const nf = document.getElementById('newsletter-form');
+  if (nf) {
+    nf.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('✅ Demo form — подписка НЕ оформлена. Это учебный проект.');
+      this.reset();
+    });
+  }
+</script>
+</body>
+</html>

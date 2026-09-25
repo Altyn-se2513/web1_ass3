@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account — Digital Book Collection</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-grid">
+
+    <header id="main-header">
+      <div class="logo">Book Collection</div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="2catalog.html">Catalog</a></li>
+          <li><a href="3product.html">Book Details</a></li>
+          <li><a href="4about.html">About Us</a></li>
+          <li><a href="5prices.html">Pricing</a></li>
+          <li><a href="6contact.html">Contact Us</a></li>
+          <li><a href="7account.html">My Account</a></li>
+          <li><a href="8reader.html">Read</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside class="sidebar">
+      <div class="streak-widget">
+        <button class="streak-toggle" id="streak-toggle" type="button" aria-expanded="false" title="Click to see your reading calendar">
+          <span class="streak-flame">🔥</span>
+          <span class="streak-count" id="streak-count">0</span>
+        </button>
+        <div class="streak-panel" id="streak-panel" hidden>
+          <h4>Your Reading Streak</h4>
+          <p id="streak-message">Log your first 20-min session today!</p>
+          <div class="streak-calendar" id="streak-calendar"></div>
+          <div class="streak-stats">
+            <div><span class="num" id="stat-current">0</span><small>Current</small></div>
+            <div><span class="num" id="stat-best">0</span><small>Best</small></div>
+            <div><span class="num" id="stat-total">0</span><small>Total</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-block">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="2catalog.html">Full catalog</a></li>
+          <li><a href="3product.html">Book details</a></li>
+          <li><a href="8reader.html">Start reading 📖</a></li>
+          <li><a href="5prices.html">Pricing</a></li>
+          <li><a href="6contact.html">Contact us</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-block">
+        <h3>Reading Tips</h3>
+        <ul>
+          <li>Set a daily 20-min goal</li>
+          <li>Keep a “to-read” list ≤ 5</li>
+          <li>Alternate fiction / non-fiction</li>
+          <li>3-line summary per chapter</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <p class="breadcrumb"><a href="index.html">Home</a> / <span>My Account</span></p>
+
+      <!-- ============ AUTH SECTION (tabs) ============ -->
+      <section id="auth-section">
+        <div class="auth-tabs">
+          <button type="button" id="tab-login" class="auth-tab active">Log In</button>
+          <button type="button" id="tab-register" class="auth-tab">Sign Up</button>
+        </div>
+
+        <!-- LOG IN -->
+        <div id="login-section">
+          <h1>Log In to Your Account</h1>
+          <p>Welcome back! Enter your email and password to continue.</p>
+
+          <form id="login-form" action="#" method="post">
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="login-email" placeholder="you@example.com" required autocomplete="email">
+
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="login-password" placeholder="Your password" required autocomplete="current-password">
+
+            <button type="submit">Log In</button>
+          </form>
+
+          <p class="auth-error" id="login-error" hidden></p>
+
+          <p class="auth-hint" style="text-align:center;margin-top:10px;">
+            <a href="#" id="forgot-password-link">Forgot your password?</a>
+          </p>
+          <p class="auth-hint">
+            Don't have an account yet?
+            <a href="#" id="link-to-register">Create one now →</a>
+          </p>
+        </div>
+
+        <!-- REGISTER -->
+        <div id="register-section" hidden>
+          <h1>Create Your Reader Account</h1>
+          <p>Track your books, build a daily reading habit, and grow your 🔥 streak.</p>
+
+          <form id="register-form" action="#" method="post">
+            <label for="reg-name">Your Name:</label>
+            <input type="text" id="reg-name" name="reg-name" placeholder="e.g. Altyn" required autocomplete="name">
+
+            <label for="reg-email">Email:</label>
+            <input type="email" id="reg-email" name="reg-email" placeholder="you@example.com" required autocomplete="email">
+
+            <label for="reg-password">Password:</label>
+            <input type="password" id="reg-password" name="reg-password" placeholder="At least 6 characters" minlength="6" required autocomplete="new-password">
+
+            <label for="reg-genre">Favorite Genre:</label>
+            <select id="reg-genre" name="reg-genre">
+              <option value="classics">Classics</option>
+              <option value="fantasy">Fantasy</option>
+              <option value="sci-fi">Science Fiction</option>
+              <option value="romance">Romance</option>
+              <option value="coming-of-age">Coming-of-Age</option>
+              <option value="history">History</option>
+            </select>
+
+            <label for="reg-goal">Daily Reading Goal (minutes):</label>
+            <input type="number" id="reg-goal" name="reg-goal" min="5" max="180" value="20">
+
+            <button type="submit">Create Account</button>
+          </form>
+
+          <p class="auth-error" id="register-error" hidden></p>
+
+          <p class="auth-hint">
+            Already have an account?
+            <a href="#" id="link-to-login">Log in →</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ PROFILE (когда залогинен) ============ -->
+      <section id="profile-section" hidden>
+        <div class="profile-top">
+          <h1>Welcome back, <span id="user-name"></span>! 👋</h1>
+          <button id="logout-btn" type="button">Log Out</button>
+        </div>
+        <p>Keep your 20-minute daily habit alive — even 1 page counts. 🔥</p>
+
+        <h2>Account Information</h2>
+        <div class="account-card">
+          <div class="account-row">
+            <span class="account-label">👤 Name</span>
+            <span class="account-value" id="acc-name">—</span>
+          </div>
+          <div class="account-row">
+            <span class="account-label">✉️ Email</span>
+            <span class="account-value" id="acc-email">—</span>
+          </div>
+          <div class="account-row">
+            <span class="account-label">🔒 Password</span>
+            <span class="account-value">Managed by Firebase (secure)</span>
+          </div>
+          <div class="account-row">
+            <span class="account-label">📚 Favorite Genre</span>
+            <span class="account-value" id="acc-genre">—</span>
+          </div>
+          <div class="account-row">
+            <span class="account-label">🎯 Daily Goal</span>
+            <span class="account-value"><span id="acc-goal">20</span> minutes</span>
+          </div>
+          <div class="account-row">
+            <span class="account-label">📅 Member Since</span>
+            <span class="account-value" id="acc-since">—</span>
+          </div>
+        </div>
+
+        <div class="streak-hero">
+          <div class="streak-hero-flame">🔥</div>
+          <div class="streak-hero-count">
+            <span id="hero-streak">0</span> day streak
+          </div>
+          <button id="log-read-btn" type="button">✅ I read 20 min today</button>
+          <a href="8reader.html" class="btn" style="margin-left:auto; padding:12px 20px; font-size:.95rem; text-decoration:none;">📖 Read Now</a>
+        </div>
+
+        <h2>My Reading Stats</h2>
+        <div class="card-row">
+          <div class="info-card">
+            <h3>Current Streak</h3>
+            <span class="big-number" id="stat-current-2">0</span>
+            <p>Consecutive days</p>
+          </div>
+          <div class="info-card">
+            <h3>Best Streak</h3>
+            <span class="big-number" id="stat-best-2">0</span>
+            <p>Your record</p>
+          </div>
+          <div class="info-card">
+            <h3>Total Days Read</h3>
+            <span class="big-number" id="stat-total-2">0</span>
+            <p>All time</p>
+          </div>
+        </div>
+
+        <h2>My Shelf 🔖</h2>
+        <p style="font-size:.9rem;">Books you saved from the catalog. They stay here even after refresh.</p>
+        <div class="shelf-grid" id="my-shelf"></div>
+
+        <h2>Add a Book to Reading Progress</h2>
+        <form id="add-book-form" action="#" method="post">
+          <label for="book-title">Book Title:</label>
+          <input type="text" id="book-title" name="book-title" placeholder="e.g. The Hobbit" required>
+
+          <label for="book-author">Author:</label>
+          <input type="text" id="book-author" name="book-author" placeholder="e.g. J.R.R. Tolkien">
+
+          <label for="book-total">Total Pages:</label>
+          <input type="number" id="book-total" name="book-total" min="1" placeholder="310">
+
+          <label for="book-current">Current Page:</label>
+          <input type="number" id="book-current" name="book-current" min="0" placeholder="0">
+
+          <button type="submit">Add to Reading Progress</button>
+        </form>
+
+        <h2>Reading Progress</h2>
+        <div class="my-books" id="my-books"></div>
+
+        <h2>Daily Reading Tips</h2>
+        <ol>
+          <li>Set a daily 20-minute reading goal.</li>
+          <li>Keep a small “to-read” list — no more than 5 titles.</li>
+          <li>Alternate between fiction and non-fiction.</li>
+          <li>Write a 3-line summary after each chapter.</li>
+          <li>Read at the same time every day — habit stacks faster.</li>
+        </ol>
+
+        <div class="see-also">
+          <h3>See Also</h3>
+          <ul>
+            <li><a href="8reader.html">Open the Reader 📖</a></li>
+            <li><a href="2catalog.html">Find your next book in the catalog</a></li>
+            <li><a href="3product.html">Add books to your shelf 🔖</a></li>
+            <li><a href="5prices.html">Upgrade your membership</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Team Members:</p>
+      <ul><li>Altyn Abdinurova</li></ul>
+      <p style="margin-top:10px;font-size:.82rem;">
+        <a href="index.html">Home</a> · <a href="2catalog.html">Catalog</a> ·
+        <a href="3product.html">Details</a> · <a href="4about.html">About</a> ·
+        <a href="5prices.html">Pricing</a> · <a href="6contact.html">Contact</a> ·
+        <a href="7account.html">My Account</a> · <a href="8reader.html">Read</a>
+      </p>
+    </footer>
+
+  </div>
+
+  <!-- ⚠️ ВАЖНО: type="module", чтобы работали import/export -->
+  <script type="module" src="js/account.js"></script>
+</body>
+</html>
