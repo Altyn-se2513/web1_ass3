@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Details — Digital Book Collection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-grid">
+
+    <header id="main-header">
+      <nav class="navbar navbar-expand-lg navbar-dark w-100" style="background: linear-gradient(90deg, #0b2545 0%, #1e5a99 100%);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><span class="fw-bold">📚 Book Collection</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="2catalog.html">Catalog</a></li>
+              <li class="nav-item"><a class="nav-link" href="3product.html">Book Details</a></li>
+              <li class="nav-item"><a class="nav-link" href="4about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="5prices.html">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="6contact.html">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="7account.html">My Account</a></li>
+              <li class="nav-item"><a class="nav-link" href="8reader.html">Read</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <aside class="sidebar">
+      <div class="sidebar-block">
+        <h3>Jump to a Book</h3>
+        <ul>
+          <li><a href="#gatsby">The Great Gatsby</a></li>
+          <li><a href="#1984">1984</a></li>
+          <li><a href="#mockingbird">To Kill a Mockingbird</a></li>
+          <li><a href="#pride">Pride and Prejudice</a></li>
+          <li><a href="#catcher">Catcher in the Rye</a></li>
+          <li><a href="#hobbit">The Hobbit</a></li>
+          <li><a href="#lotr">Lord of the Rings</a></li>
+          <li><a href="#harry">Harry Potter</a></li>
+          <li><a href="#crime">Crime and Punishment</a></li>
+          <li><a href="#alchemist">The Alchemist</a></li>
+          <li><a href="#janeeyre">Jane Eyre</a></li>
+          <li><a href="#moby">Moby-Dick</a></li>
+          <li><a href="#warpeace">War and Peace</a></li>
+          <li><a href="#oldman">Old Man &amp; the Sea</a></li>
+          <li><a href="#f451">Fahrenheit 451</a></li>
+          <li><a href="#bravenew">Brave New World</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-block">
+        <h3>Reading Tips</h3>
+        <ul>
+          <li>Read 20 min a day</li>
+          <li>Keep notes in margins</li>
+          <li>Re-read your favorites</li>
+          <li>Join a book club</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-block">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="2catalog.html">Full catalog</a></li>
+          <li><a href="5prices.html">Membership</a></li>
+          <li><a href="6contact.html">Contact</a></li>
+          <li><a href="7account.html">My Account 🔥</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <p class="breadcrumb"><a href="index.html">Home</a> / <a href="2catalog.html">Catalog</a> / <span>Book Details</span></p>
+
+      <h1>Book Details</h1>
+      <p>Browse our collection below. Click on any book to see its full description, specifications, and a notable quote. 16 titles in total.</p>
+
+      <div class="book-list">
+
+        <details class="book-card" id="gatsby">
+          <summary class="book-summary">
+            <img src="imgs/gatsby.jpg" alt="The Great Gatsby cover">
+            <div class="book-info">
+              <h3>The Great Gatsby</h3>
+              <p class="book-author">F. Scott Fitzgerald · 1925</p>
+              <p class="book-short">A haunting portrait of the Jazz Age and the fragile American Dream.</p>
+              <span class="book-toggle">Click to see full details</span>
+            </div>
+          </summary>
+          <div class="book-details">
+            <h4>Specification</h4>
+            <ul>
+              <li><strong>Author:</strong> F. Scott Fitzgerald</li>
+              <li><strong>Published:</strong> 1925</li>
+              <li><strong>Pages:</strong> 180</li>
+              <li><strong>Genre:</strong> Classic Literature</li>
+            </ul>
+            <h4>Overview</h4>
+            <p>Set in the Jazz Age on Long Island, the novel depicts narrator Nick Carraway's interactions with mysterious millionaire Jay Gatsby and Gatsby's obsession to reunite with his former lover, Daisy Buchanan.</p>
+            <blockquote>"So we beat on, boats against the current, borne back ceaselessly into the past."</blockquote>
+            <button class="btn btn-primary add-to-shelf mt-3" type="button" data-id="gatsby" data-title="The Great Gatsby" data-author="F. Scott Fitzgerald" data-cover="imgs/gatsby.jpg">🔖 Add to Shelf</button>
+            <p style="margin-top:10px;"><a href="2catalog.html">← Back to catalog</a> · <a href="#1984">Next: 1984 →</a></p>
+          </div>
+        </details>
+
+        <details class="book-card" id="1984">
+          <summary class="book-summary">
+            <img src="imgs/1984.jpg" alt="1984 cover">
+            <div class="book-info">
+              <h3>1984</h3>
+              <p class="book-author">George Orwell · 1949</p>
+              <p class="book-short">A dystopian masterpiece about total surveillance and the death of truth.</p>
+              <span class="book-toggle">Click to see full details</span>
+            </div>
+          </summary>
+          <div class="book-details">
+            <h4>Specification</h4>
+            <ul>
+              <li><strong>Author:</strong> George Orwell</li>
+              <li><strong>Published:</strong> 1949</li>
+              <li><strong>Pages:</strong> 328</li>
+              <li><strong>Genre:</strong> Dystopian Fiction</li>
+            </ul>
+            <h4>Overview</h4>
+            <p>In a totalitarian future, Winston Smith works for the Ministry of Truth rewriting history. He rebels against the omnipresent Party and Big Brother, only to discover that love and truth are the most dangerous crimes of all.</p>
+            <blockquote>"Big Brother is watching you."</blockquote>
+            <button class="btn btn-primary add-to-shelf mt-3" type="button" data-id="1984" data-title="1984" data-author="George Orwell" data-cover="imgs/1984.jpg">🔖 Add to Shelf</button>
+            <p style="margin-top:10px;"><a href="#gatsby">← Previous</a> · <a href="#mockingbird">Next: Mockingbird →</a></p>
+          </div>
+        </details>
+
+        <details class="book-card" id="mockingbird">
+          <summary class="book-summary">
+            <img src="imgs/mockingbird.jpg" alt="To Kill a Mockingbird cover">
+            <div class="book-info">
+              <h3>To Kill a Mockingbird</h3>
+              <p class="book-author">Harper Lee · 1960</p>
+              <p class="book-short">A powerful story of justice, childhood, and racial inequality in the South.</p>
+              <span class="book-toggle">Click to see full details</span>
+            </div>
+          </summary>
+          <div class="book-details">
+            <h4>Specification</h4>
+            <ul>
+              <li><strong>Author:</strong> Harper Lee</li>
+              <li><strong>Published:</strong> 1960</li>
+              <li><strong>Pages:</strong> 281</li>
+              <li><strong>Genre:</strong> Classic Fiction</li>
+            </ul>
+            <h4>Overview</h4>
+            <p>Young Scout Finch witnesses racial injustice in her Alabama town when her father, lawyer Atticus Finch, defends a Black man falsely accused of a crime.</p>
+            <blockquote>"You never really understand a person until you consider things from his point of view."</blockquote>
+            <button class="btn btn-primary add-to-shelf mt-3" type="button" data-id="mockingbird" data-title="To Kill a Mockingbird" data-author="Harper Lee" data-cover="imgs/mockingbird.jpg">🔖 Add to Shelf</button>
+            <p style="margin-top:10px;"><a href="#1984">← Previous</a> · <a href="#pride">Next: Pride and Prejudice →</a></p>
+          </div>
+        </details>
+
+        <details class="book-card" id="pride">
+          <summary class="book-summary">
+            <img src="imgs/pride.jpg" alt="Pride and Prejudice cover">
+            <div class="book-info">
+              <h3>Pride and Prejudice</h3>
+              <p class="book-author">Jane Austen · 1813</p>
+              <p class="book-short">A sparkling romance of manners, wit, and misunderstanding in Regency England.</p>
+              <span class="book-toggle">Click to see full details</span>
+            </div>
+          </summary>
+          <div class="book-details">
+            <h4>Specification</h4>
+            <ul>
+              <li><strong>Author:</strong> Jane Austen</li>
+              <li><strong>Published:</strong> 1813</li>
+              <li><strong>Pages:</strong> 279</li>
+              <li><strong>Genre:</strong> Romance / Classic</li>
+            </ul>
+            <h4>Overview</h4>
+            <p>Elizabeth Bennet navigates love, family, and society in Regency-era England, sparring with the proud Mr. Darcy while discovering the true meaning of both.</p>
+            <blockquote>"It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."</blockquote>
+            <button class="btn btn-primary add-to-shelf mt-3" type="button" data-id="pride" data-title="Pride and Prejudice" data-author="Jane Austen" data-cover="imgs/pride.jpg">🔖 Add to Shelf</button>
+            <p style="margin-top:10px;"><a href="#mockingbird">← Previous</a> · <a href="#catcher">Next: Catcher in the Rye →</a></p>
+          </div>
+        </details>
+
+        <details class="book-card" id="catcher">
+          <summary class="book-summary">
+            <img src="imgs/catcher.jpg" alt="The Catcher in the Rye cover">
+            <div class="book-info">
+              <h3>The Catcher in the Rye</h3>
+              <p class="book-author">J.D. Salinger · 1951</p>
+              <p class="book-short">A raw coming-of-age story about alienation and the loss of innocence.</p>
+              <span class="book-toggle">Click to see full details</span>
+            </div>
+          </summary>
+          <div class="book-details">
+            <h4>Specification</h4>
+            <ul>
+              <li><strong>Author:</strong> J.D. Salinger</li>
+              <li><strong>Published:</strong> 1951</li>
+              <li><strong>Pages:</strong> 277</li>
+              <li><strong>Genre:</strong> Coming-of-Age</li>
+            </ul>
+            <h4>Overview</h4>
+            <p>Holden Caulfield wanders New York City after being expelled from prep school, grappling with alienation, identity, and the loss of innocence.</p>
+            <blockquote>"If you really want to know the truth, I'm quite illiterate, but I read a lot."</blockquote>
+            <button class="btn btn-primary add-to-shelf mt-3" type="button" data-id="catcher" data-title="The Catcher in the Rye" data-author="J.D. Salinger" data-cover="imgs/catcher.jpg">🔖 Add to Shelf</button>
+            <p style="margin-top:10px;"><a href="#pride">← Previous</a> · <a href="#hobbit">Next: The Hobbit →</a></p>
+          </div>
+        </details>
+
+        <details class="book-card" id="hobbit">
+          <summary class="book-summary">
+            <img src="imgs/hobbit.jpg" alt="The Hobbit cover">
+            <div class="book-info">
+              <h3>The Hobbit</h3>
+              <p class="book-author">J.R.R. Tolkien · 1937</p>
+              <p class="book-short">An epic fantasy adventure through Middle-earth with dwarves, a wizard, and a dragon.</p>
+              <span class="book-toggle">Click to see full details</span>
+            </div>
+          </summary>
+          <div class="book-details">
+            <h4>Specification</h4>
+            <ul>
+              <li><strong>Author:</strong> J.R.R. Tolkien</li>
+              <li><strong>Published:</strong> 1937</li>
+              <li><strong>Pages:</strong> 310</li>
+              <li><strong>Genre:</strong> Fantasy</li>
+            </ul>
+            <h4>Overview</h4>
+            <p>Bilbo Baggins, a quiet hobbit, is swept into an epic quest by the wizard Gandalf and thirteen dwarves to reclaim their mountain home from the dragon Smaug.</p>
+            <blockquote>"In a hole in the ground there lived a hobbit."</blockquote>
+            <button class="btn btn-primary add-to-shelf mt-3" type="button" data-id="hobbit" data-title="The Hobbit" data-author="J.R.R. Tolkien" data-cover="imgs/hobbit.jpg">🔖 Add to Shelf</button>
+            <p style="margin-top:10px;"><a href="#catcher">← Previous</a> · <a href="#lotr">Next: Lord of the Rings →</a></p>
+          </div>
+        </details>
+
+        <details class="book-card" id="lotr">
+          <summary class="book-summary">
+            <img src="imgs/lotr.jpg" alt="The Lord of the Rings cover">
+            <div class="book-info">
+              <h3>The Lord of the Rings</h3>
+              <p class="book-author">J.R.R. Tolkien · 1954</p>
+              <p class="book-short">The epic quest to destroy the One Ring and save Middle-earth.</p>
+              <span class="book-toggle">Click to see full details</span>
+            </div>
+          </summary>
+          <div class="book-details">
+            <h4>Specification</h4>
+            <ul>
+              <li><strong>Author:</strong> J.R.R. Tolkien</li>
+              <li><strong>Published:</strong> 1954–1955</li>
+              <li><strong>Pages:</strong> 1178</li>
+              <li><strong>Genre:</strong> Epic Fantasy</li>
+            </ul>
+            <h4>Overview</h4>
+            <p>Frodo Baggins inherits the One Ring and must carry it to Mount Doom to destroy it, facing orcs, betrayal, and the dark lord Sauron.</p>
+            <blockquote>"One Ring to rule them all, One Ring to find them."</blockquote>
+            <button class="btn btn-primary add-to-shelf mt-3" type="button" data-id="lotr" data-title="The Lord of the Rings" data-author="J.R.R. Tolkien" data-cover="imgs/lotr.jpg">🔖 Add to Shelf</button>
+            <p style="margin-top:10px;"><a href="#hobbit">← Previous</a> · <a href="#harry">Next: Harry Potter →</a></p>
+          </div>
+        </details>
+
+        <details class="book-card" id="harry">
+          <summary class="book-summary">
+            <img src="imgs/harry.jpg" alt="Harry Potter cover">
+            <div class="book-info">
+              <h3>Harry Potter &amp; the Philosopher's Stone</h3>
+              <p class="book-author">J.K. Rowling · 1997</p>
+              <p class="book-short">A boy discovers he's a wizard and begins his first year at Hogwarts.</p>
+              <span class="book-toggle">Click to see full details</span>
+            </div>
+          </summary>
+          <div class="book-details">
+            <h4>Specification</h4>
+            <ul>
+              <li><strong>Author:</strong> J.K. Rowling</li>
+              <li><strong>Published:</strong> 1997</li>
+              <li><strong>Pages:</strong> 223</li>
+              <li><strong>Genre:</strong> Fantasy / YA</li>
+            </ul>
+            <h4>Overview</h4>
+            <p>On his eleventh birthday, Harry Potter learns he is a wizard and is invited to attend Hogwarts School of Witchcraft and Wizardry.</p>
+            <blockquote>"It does not do to dwell on dreams and forget to live."</blockquote>
+            <button class="btn btn-primary add-to-shelf mt-3" type="button" data-id="harry" data-title="Harry Potter & the Philosopher's Stone" data-author="J.K. Rowling" data-cover="imgs/harry.jpg">🔖 Add to Shelf</button>
+            <p style="margin-top:10px;"><a href="#lotr">← Previous</a> · <a href="#crime">Next: Crime and Punishment →</a></p>
+          </div>
+        </details>
+
+        <details class="book-card" id="crime">
+          <summary class="book-summary">
+            <img src="imgs/crime.jpg" alt="Crime and Punishment cover">
+            <div class="book-info">
+              <h3>Crime and Punishment</h3>
+              <p class="book-author">Fyodor Dostoevsky · 1866</p>
+              <p class="book-short">A psychological masterpiece about guilt, redemption, and morality.</p>
+              <span class="book-toggle">Click to see full details</span>
+            </div>
+          </summary>
+          <div class="book-details">
+            <h4>Specification</h4>
+            <ul>
+              <li><strong>Author:</strong> Fyodor Dostoevsky</li>
+              <li><strong>Published:</strong> 1866</li>
+              <li><strong>Pages:</strong> 671</li>
+              <li><strong>Genre:</strong> Psychological Fiction</li>
+            </ul>
+            <h4>Overview</h4>
+            <p>Rodion Raskolnikov, a destitute ex-student in St. Petersburg, commits a murder to test his theory of the "extraordinary man" — and is consumed by guilt.</p>
+            <blockquote>"Pain and suffering are always inevitable for a large intelligence and a deep heart."</blockquote>
+            <button class="btn btn-primary add-to-shelf mt-3" type="button" data-id="crime" data-title="Crime and Punishment" data-author="Fyodor Dostoevsky" data-cover="imgs/crime.jpg">🔖 Add to Shelf</button>
+            <p style="margin-top:10px;"><a href="#harry">← Previous</a> · <a href="#alchemist">Next: The Alchemist →</a></p>
+          </div>
+        </details>
+
+        <details class="book-card" id="alchemist">
+          <summary class="book-summary">
+            <img src="imgs/alchemist.jpg" alt="The Alchemist cover">
+            <div class="book-info">
+              <h3>The Alchemist</h3>
+              <p class="book-author">Paulo Coelho · 1988</p>
+              <p class="book-short">A philosophical tale about following your personal legend.</p>
+              <span class="book-toggle">Click to see full details</span>
+            </div>
+          </summary>
+          <div class="book-details">
+            <h4>Specification</h4>
+            <ul>
+              <li><strong>Author:</strong> Paulo Coelho</li>
+              <li><strong>Published:</strong> 1988</li>
+              <li><strong>Pages:</strong> 208</li>
+              <li><strong>Genre:</strong> Philosophical Fiction</li>
+            </ul>
+            <h4>Overview</h4>
+            <p>Santiago, an Andalusian shepherd boy, travels to Egypt after a recurring dream about treasure — meeting kings, alchemists, and his own destiny along the way.</p>
+            <blockquote>"When you want something, all the universe conspires in helping you to achieve it."</blockquote>
+            <button class="btn btn-primary add-to-shelf mt-3" type="button" data-id="alchemist" data-title="The Alchemist" data-author="Paulo Coelho" data-cover="imgs/alchemist.jpg">🔖 Add to Shelf</button>
+            <p style="margin-top:10px;"><a href="#crime">← Previous</a> · <a href="#janeeyre">Next: Jane Eyre →</a></p>
+          </div>
+        </details>
+
+        <details class="book-card" id="janeeyre">
+          <summary class="book-summary">
+            <img src="imgs/janeeyre.jpg" alt="Jane Eyre cover">
+            <div class="book-info">
+              <h3>Jane Eyre</h3>
+              <p class="book-author">Charlotte Brontë · 1847</p>
+              <p class="book-short">A gothic romance about an independent governess and a mysterious master.</p>
+              <span class="book-toggle">Click to see full details</span>
+            </div>
+          </summary>
+          <div class="book-details">
+            <h4>Specification</h4>
+            <ul>
+              <li><strong>Author:</strong> Charlotte Brontë</li>
+              <li><strong>Published:</strong> 1847</li>
+              <li><strong>Pages:</strong> 507</li>
+              <li><strong>Genre:</strong> Gothic Romance</li>
+            </ul>
+            <h4>Overview</h4>
+            <p>Orphaned Jane Eyre becomes a governess at Thornfield Hall and falls in love with its brooding master, Mr. Rochester — but his secret threatens everything.</p>
+            <blockquote>"I am no bird; and no net ensnares me: I am a free human being with an independent will."</blockquote>
+            <button class="btn btn-primary add-to-shelf mt-3" type="button" data-id="janeeyre" data-title="Jane Eyre" data-author="Charlotte Brontë" data-cover="imgs/janeeyre.jpg">🔖 Add to Shelf</button>
+            <p style="margin-top:10px;"><a href="#alchemist">← Previous</a> · <a href="#moby">Next: Moby-Dick →</a></p>
+          </div>
+        </details>
+
+        <details class="book-card" id="moby">
+          <summary class="book-summary">
+            <img src="imgs/moby.jpg" alt="Moby-Dick cover">
+            <div class="book-info">
+              <h3>Moby-Dick</h3>
+              <p class="book-author">Herman Melville · 1851</p>
+              <p class="book-short">A whaling voyage becomes an obsessive hunt for a legendary white whale.</p>
+              <span class="book-toggle">Click to see full details</span>
+            </div>
+          </summary>
+          <div class="book-details">
+            <h4>Specification</h4>
+            <ul>
+              <li><strong>Author:</strong> Herman Melville</li>
+              <li><strong>Published:</strong> 1851</li>
+              <li><strong>Pages:</strong> 635</li>
+              <li><strong>Genre:</strong> Adventure</li>
+            </ul>
+            <h4>Overview</h4>
+            <p>Ishmael joins the whaling ship Pequod, whose captain Ahab is consumed by revenge against the white whale that took his leg.</p>
+            <blockquote>"Call me Ishmael."</blockquote>
+            <button class="btn btn-primary add-to-shelf mt-3" type="button" data-id="moby" data-title="Moby-Dick" data-author="Herman Melville" data-cover="imgs/moby.jpg">🔖 Add to Shelf</button>
+            <p style="margin-top:10px;"><a href="#janeeyre">← Previous</a> · <a href="#warpeace">Next: War and Peace →</a></p>
+          </div>
+        </details>
+
+        <details class="book-card" id="warpeace">
+          <summary class="book-summary">
+            <img src="imgs/warpeace.jpg" alt="War and Peace cover">
+            <div class="book-info">
+              <h3>War and Peace</h3>
+              <p class="book-author">Leo Tolstoy · 1869</p>
+              <p class="book-short">A sweeping epic of Russian society during the Napoleonic Wars.</p>
+              <span class="book-toggle">Click to see full details</span>
+            </div>
+          </summary>
+          <div class="book-details">
+            <h4>Specification</h4>
+            <ul>
+              <li><strong>Author:</strong> Leo Tolstoy</li>
+              <li><strong>Published:</strong> 1869</li>
+              <li><strong>Pages:</strong> 1225</li>
+              <li><strong>Genre:</strong> Historical Fiction</li>
+            </ul>
+            <h4>Overview</h4>
+            <p>Interweaving the lives of five aristocratic families, Tolstoy explores love, war, and history during Napoleon's invasion of Russia.</p>
+            <blockquote>"The strongest of all warriors are these two — Time and Patience."</blockquote>
+            <button class="btn btn-primary add-to-shelf mt-3" type="button" data-id="warpeace" data-title="War and Peace" data-author="Leo Tolstoy" data-cover="imgs/warpeace.jpg">🔖 Add to Shelf</button>
+            <p style="margin-top:10px;"><a href="#moby">← Previous</a> · <a href="#oldman">Next: The Old Man and the Sea →</a></p>
+          </div>
+        </details>
+
+        <details class="book-card" id="oldman">
+          <summary class="book-summary">
+            <img src="imgs/oldman.jpg" alt="The Old Man and the Sea cover">
+            <div class="book-info">
+              <h3>The Old Man and the Sea</h3>
+              <p class="book-author">Ernest Hemingway · 1952</p>
+              <p class="book-short">An old fisherman's solitary struggle with a giant marlin.</p>
+              <span class="book-toggle">Click to see full details</span>
+            </div>
+          </summary>
+          <div class="book-details">
+            <h4>Specification</h4>
+            <ul>
+              <li><strong>Author:</strong> Ernest Hemingway</li>
+              <li><strong>Published:</strong> 1952</li>
+              <li><strong>Pages:</strong> 127</li>
+              <li><strong>Genre:</strong> Fiction / Novella</li>
+            </ul>
+            <h4>Overview</h4>
+            <p>Santiago, an aging Cuban fisherman, battles a giant marlin far out at sea in a struggle of endurance, dignity, and nature.</p>
+            <blockquote>"A man can be destroyed but not defeated."</blockquote>
+            <button class="btn btn-primary add-to-shelf mt-3" type="button" data-id="oldman" data-title="The Old Man and the Sea" data-author="Ernest Hemingway" data-cover="imgs/oldman.jpg">🔖 Add to Shelf</button>
+            <p style="margin-top:10px;"><a href="#warpeace">← Previous</a> · <a href="#f451">Next: Fahrenheit 451 →</a></p>
+          </div>
+        </details>
+
+        <details class="book-card" id="f451">
+          <summary class="book-summary">
+            <img src="imgs/f451.jpg" alt="Fahrenheit 451 cover">
+            <div class="book-info">
+              <h3>Fahrenheit 451</h3>
+              <p class="book-author">Ray Bradbury · 1953</p>
+              <p class="book-short">A future where firemen burn books and thinking is a crime.</p>
+              <span class="book-toggle">Click to see full details</span>
+            </div>
+          </summary>
+          <div class="book-details">
+            <h4>Specification</h4>
+            <ul>
+              <li><strong>Author:</strong> Ray Bradbury</li>
+              <li><strong>Published:</strong> 1953</li>
+              <li><strong>Pages:</strong> 194</li>
+              <li><strong>Genre:</strong> Dystopia / Sci-Fi</li>
+            </ul>
+            <h4>Overview</h4>
+            <p>Guy Montag is a fireman who burns books — until he begins to question his society and the meaning of reading.</p>
+            <blockquote>"It was a pleasure to burn."</blockquote>
+            <button class="btn btn-primary add-to-shelf mt-3" type="button" data-id="f451" data-title="Fahrenheit 451" data-author="Ray Bradbury" data-cover="imgs/f451.jpg">🔖 Add to Shelf</button>
+            <p style="margin-top:10px;"><a href="#oldman">← Previous</a> · <a href="#bravenew">Next: Brave New World →</a></p>
+          </div>
+        </details>
+
+        <details class="book-card" id="bravenew">
+          <summary class="book-summary">
+            <img src="imgs/bravenew.jpg" alt="Brave New World cover">
+            <div class="book-info">
+              <h3>Brave New World</h3>
+              <p class="book-author">Aldous Huxley · 1932</p>
+              <p class="book-short">A pleasure-driven future where freedom is sacrificed for stability.</p>
+              <span class="book-toggle">Click to see full details</span>
+            </div>
+          </summary>
+          <div class="book-details">
+            <h4>Specification</h4>
+            <ul>
+              <li><strong>Author:</strong> Aldous Huxley</li>
+              <li><strong>Published:</strong> 1932</li>
+              <li><strong>Pages:</strong> 311</li>
+              <li><strong>Genre:</strong> Dystopia / Sci-Fi</li>
+            </ul>
+            <h4>Overview</h4>
+            <p>In a genetically engineered society, citizens are conditioned for happiness — until one outsider challenges the system.</p>
+            <blockquote>"One believes things because one has been conditioned to believe them."</blockquote>
+            <button class="btn btn-primary add-to-shelf mt-3" type="button" data-id="bravenew" data-title="Brave New World" data-author="Aldous Huxley" data-cover="imgs/bravenew.jpg">🔖 Add to Shelf</button>
+            <p style="margin-top:10px;"><a href="#f451">← Previous</a> · <a href="2catalog.html">Back to catalog →</a></p>
+          </div>
+        </details>
+
+      </div>
+
+      <div class="see-also">
+        <h3>See Also</h3>
+        <ul>
+          <li><a href="2catalog.html">Browse all 16 titles in the catalog</a></li>
+          <li><a href="5prices.html">Read them all with a membership</a></li>
+          <li><a href="6contact.html">Request a new title</a></li>
+          <li><a href="7account.html">See your saved shelf 🔖</a></li>
+          <li><a href="8reader.html">Read</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <p>Team Members:</p>
+      <ul><li>Altyn Abdinurova</li></ul>
+    </footer>
+
+  </div>
+
+  <script>
+  (function () {
+    const KEY_SHELF = 'bc_shelf';
+    const getShelf = () => JSON.parse(localStorage.getItem(KEY_SHELF) || '[]');
+    const setShelf = (a) => localStorage.setItem(KEY_SHELF, JSON.stringify(a));
+
+    function updateButtons() {
+      const shelf = getShelf();
+      document.querySelectorAll('.add-to-shelf').forEach((btn) => {
+        const id = btn.dataset.id;
+        const onShelf = shelf.some((b) => b.id === id);
+        if (onShelf) {
+          btn.classList.add('on-shelf');
+          btn.innerHTML = '🔖 On your shelf ✓';
+        } else {
+          btn.classList.remove('on-shelf');
+          btn.innerHTML = '🔖 Add to Shelf';
+        }
+      });
+    }
+
+    document.querySelectorAll('.add-to-shelf').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.id;
+        const shelf = getShelf();
+        const idx = shelf.findIndex((b) => b.id === id);
+        if (idx > -1) {
+          shelf.splice(idx, 1);
+        } else {
+          shelf.push({
+            id: id,
+            title: btn.dataset.title,
+            author: btn.dataset.author,
+            cover: btn.dataset.cover,
+            addedAt: Date.now()
+          });
+        }
+        setShelf(shelf);
+        updateButtons();
+      });
+    });
+
+    updateButtons();
+  })();
+  </script>
+  <script>
+  function openBookFromHash() {
+    const hash = window.location.hash;
+    if (hash) {
+      const targetDetails = document.querySelector(`details${hash}`);
+      if (targetDetails) {
+        targetDetails.open = true;
+        targetDetails.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', openBookFromHash);
+  window.addEventListener('hashchange', openBookFromHash);
+</script>
+ <script>
+  function openBookFromUrl() {
+    const bookId = decodeURIComponent(window.location.hash.slice(1));
+
+    if (!bookId) return;
+
+    const book = document.getElementById(bookId);
+
+    if (book && book.matches('details')) {
+        book.open = true;
+
+        book.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+  }
+
+  window.addEventListener(
+      'hashchange',
+      openBookFromUrl
+  );
+
+  openBookFromUrl();
+ </script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

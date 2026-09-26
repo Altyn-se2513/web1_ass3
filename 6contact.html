@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Digital Book Collection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-grid">
+
+    <!-- ============ HEADER (Bootstrap Navbar — Task 5) ============ -->
+    <header id="main-header">
+      <nav class="navbar navbar-expand-lg navbar-dark w-100" style="background: linear-gradient(90deg, #0b2545 0%, #1e5a99 100%);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><span class="fw-bold">📚 Book Collection</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="2catalog.html">Catalog</a></li>
+              <li class="nav-item"><a class="nav-link" href="3product.html">Book Details</a></li>
+              <li class="nav-item"><a class="nav-link" href="4about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="5prices.html">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="6contact.html">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="7account.html">My Account</a></li>
+              <li class="nav-item"><a class="nav-link" href="8reader.html">Read</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar">
+      <div class="sidebar-block">
+        <h3>Contact Channels</h3>
+        <ul>
+          <li>Phone support</li>
+          <li>Email support</li>
+          <li>Live chat (beta)</li>
+          <li>Social media</li>
+        </ul>
+      </div>
+      <div class="sidebar-block">
+        <h3>Support Hours</h3>
+        <ul>
+          <li>Mon–Fri: 9:00–18:00</li>
+          <li>Sat: 10:00–14:00</li>
+          <li>Sun: Closed</li>
+        </ul>
+      </div>
+      <div class="sidebar-block">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="5prices.html">Pricing plans</a></li>
+          <li><a href="2catalog.html">Catalog</a></li>
+          <li><a href="4about.html">About us</a></li>
+          <li><a href="7account.html">My Account 🔥</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main class="main-content">
+      <div class="container-fluid px-0">
+        <p class="breadcrumb"><a href="index.html">Home</a> / <span>Contact</span></p>
+
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you. Reach us by phone or send a message below — we typically respond within 24 hours.</p>
+
+        <!-- ============ CONTACT INFO CARDS (Bootstrap Grid + Cards) ============ -->
+        <div class="row g-4 mb-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">📞 Main Office</h5>
+                <p class="card-text">+1 (123) 456-7890</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">💬 Customer Support</h5>
+                <p class="card-text">+1 (123) 456-7891</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">📚 Book Orders</h5>
+                <p class="card-text">+1 (123) 456-7892</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img src="imgs/contactlogo.jpg" alt="Phone icon for customer contact details" class="page-img">
+
+        <!-- ============ RESPONSIVE FORM (Task 9 — Bootstrap Forms) ============ -->
+        <h2>Send Us a Message</h2>
+        <form id="contact-form" action="#" method="post" class="mt-4 mb-5" style="max-width: 640px;">
+
+          <!-- Name (input-group with icon) -->
+          <div class="mb-3">
+            <label for="name" class="form-label fw-semibold">Name:</label>
+            <div class="input-group">
+              <span class="input-group-text">👤</span>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Your full name" required>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label fw-semibold">Email Address:</label>
+            <div class="input-group">
+              <span class="input-group-text">✉️</span>
+              <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <!-- Select -->
+          <div class="mb-3">
+            <label for="genre" class="form-label fw-semibold">Favorite Genre:</label>
+            <select id="genre" name="genre" class="form-select">
+              <option value="classics">Classics</option>
+              <option value="fantasy">Fantasy</option>
+              <option value="sci-fi">Science Fiction</option>
+              <option value="romance">Romance</option>
+              <option value="coming-of-age">Coming-of-Age</option>
+            </select>
+          </div>
+
+          <!-- Contact preference (btn-group with btn-outline — Task 6) -->
+          <div class="mb-3">
+            <label class="form-label fw-semibold d-block">Preferred Contact Method:</label>
+            <div class="btn-group" role="group" aria-label="Contact preference">
+              <input type="radio" class="btn-check" name="contact-method" id="cm-email" value="email" checked>
+              <label class="btn btn-outline-primary" for="cm-email">✉️ Email</label>
+
+              <input type="radio" class="btn-check" name="contact-method" id="cm-phone" value="phone">
+              <label class="btn btn-outline-primary" for="cm-phone">📞 Phone</label>
+
+              <input type="radio" class="btn-check" name="contact-method" id="cm-chat" value="chat">
+              <label class="btn btn-outline-primary" for="cm-chat">💬 Live Chat</label>
+            </div>
+          </div>
+
+          <!-- Color input -->
+          <div class="mb-3">
+            <label for="theme-color" class="form-label fw-semibold">Preferred Theme Accent Color:</label>
+            <input type="color" class="form-control form-control-color" id="theme-color" name="theme-color" value="#0b2545" title="Choose your accent color">
+          </div>
+
+          <!-- Textarea -->
+          <div class="mb-3">
+            <label for="message" class="form-label fw-semibold">Message:</label>
+            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+          </div>
+
+          <!-- Submit buttons (btn + btn-lg + btn-sm — Task 6) -->
+          <div class="d-flex gap-2 flex-wrap">
+            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+            <button type="reset" class="btn btn-outline-secondary">Reset</button>
+          </div>
+        </form>
+
+        <h2>Visit Us</h2>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr><th>City</th><th>Address</th><th>Phone</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Astana</td><td>Mangilik El Ave 55/9</td><td>+7 (717) 000-0001</td></tr>
+              <tr><td>Almaty</td><td>Abay Ave 12</td><td>+7 (727) 000-0002</td></tr>
+              <tr><td>Online</td><td>bookcollection.example</td><td>24/7 chat</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="see-also">
+          <h3>See Also</h3>
+          <ul>
+            <li><a href="5prices.html">Choose a membership plan</a></li>
+            <li><a href="2catalog.html">Browse the catalog</a></li>
+            <li><a href="3product.html">Read book details</a></li>
+            <li><a href="4about.html">Learn about the team</a></li>
+            <li><a href="7account.html">Track your reading streak 🔥</a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Team Members:</p>
+      <ul><li>Altyn Abdinurova</li></ul>
+    </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('✅ Demo form — ваше сообщение НЕ отправлено. Это учебный проект.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

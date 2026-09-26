@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reader — Digital Book Collection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-grid">
+
+    <header id="main-header">
+      <nav class="navbar navbar-expand-lg navbar-dark w-100" style="background: linear-gradient(90deg, #0b2545 0%, #1e5a99 100%);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><span class="fw-bold">📚 Book Collection</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="2catalog.html">Catalog</a></li>
+              <li class="nav-item"><a class="nav-link" href="3product.html">Book Details</a></li>
+              <li class="nav-item"><a class="nav-link" href="4about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="5prices.html">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="6contact.html">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="7account.html">My Account</a></li>
+              <li class="nav-item"><a class="nav-link" href="8reader.html">Read</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <aside class="sidebar">
+
+      <div class="sidebar-block">
+        <h3>🔖 Bookmarks</h3>
+        <ul id="bookmark-list"></ul>
+      </div>
+
+      <div class="sidebar-block">
+        <h3>🖍 Highlights</h3>
+        <ul id="highlight-list"></ul>
+      </div>
+
+      <div class="sidebar-block">
+        <h3>My Shelf</h3>
+        <ul id="reader-shelf-list"></ul>
+      </div>
+
+      <div class="sidebar-block">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="2catalog.html">Catalog</a></li>
+          <li><a href="3product.html">Book details</a></li>
+          <li><a href="7account.html">My Account 🔥</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <p class="breadcrumb"><a href="index.html">Home</a> / <a href="7account.html">My Account</a> / <span>Reader</span></p>
+
+      <h1>Read Online</h1>
+      <p>Select any text below and click a highlighter color to save it. Click 🔖 to bookmark a paragraph. Everything is stored on your device.</p>
+
+      <div class="reader-toolbar">
+        <span class="reader-book-title">
+          <strong>Book:</strong> <span id="book-title-display">—</span>
+        </span>
+
+        <select id="book-select" aria-label="Choose book">
+          <option value="">— Switch book —</option>
+          <option value="pride">Pride and Prejudice</option>
+          <option value="gatsby">The Great Gatsby</option>
+          <option value="alice">Alice in Wonderland</option>
+          <option value="sherlock">A Scandal in Bohemia</option>
+          <option value="frankenstein">Frankenstein</option>
+        </select>
+
+        <span class="toolbar-label">Highlight:</span>
+        <div class="highlighter-bar">
+          <button class="hl-btn" data-color="yellow" title="Yellow"></button>
+          <button class="hl-btn" data-color="green"  title="Green"></button>
+          <button class="hl-btn" data-color="blue"   title="Blue"></button>
+          <button class="hl-btn" data-color="pink"   title="Pink"></button>
+          <button class="hl-btn" data-color="orange" title="Orange"></button>
+        </div>
+
+        <button id="bookmark-btn" type="button">🔖 Bookmark paragraph</button>
+        <button id="clear-highlights" type="button">Clear all</button>
+        <a href="7account.html" class="toolbar-link">← Back to shelf</a>
+      </div>
+
+      <article class="book-reader" id="book-reader"></article>
+    </main>
+
+    <footer>
+      <p>Team Members:</p>
+      <ul><li>Altyn Abdinurova</li></ul>
+      <p style="margin-top:10px;font-size:.82rem;">
+        <a href="index.html">Home</a> · <a href="2catalog.html">Catalog</a> ·
+        <a href="3product.html">Details</a> · <a href="4about.html">About</a> ·
+        <a href="5prices.html">Pricing</a> · <a href="6contact.html">Contact</a> ·
+        <a href="7account.html">My Account</a> · <a href="8reader.html">Read</a>
+      </p>
+    </footer>
+
+  </div>
+
+  <script src="js/reader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
