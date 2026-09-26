@@ -1,7 +1,3 @@
-/* =========================================================
-   Digital Book Collection — Reader with Highlights
-   Author: Altyn Abdinurova | Group: SE-2513
-   ========================================================= */
 (function () {
   const KEY_HL   = 'bc_reader_highlights';
   const KEY_BM   = 'bc_reader_bookmarks';
@@ -20,8 +16,7 @@
       (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
   }
 
-  /* ===== Public-domain book excerpts ===== */
-  const BOOKS = {
+]  const BOOKS = {
     pride: {
       title: "Pride and Prejudice",
       author: "Jane Austen",
@@ -42,7 +37,6 @@
     }
   };
 
-  /* ===== Определяем книгу ===== */
   const params = new URLSearchParams(window.location.search);
   const urlId = params.get('id');
   let currentBook;
@@ -60,7 +54,6 @@
     localStorage.setItem(KEY_LAST, currentBook);
   }
 
-  /* ===== Render book ===== */
   function renderBook() {
     const container = $('book-reader');
     if (!container) return;
@@ -87,7 +80,6 @@
     applyHighlights();
   }
 
-  /* ===== Заглушка ===== */
   function renderNotAvailable() {
     const container = $('book-reader');
     if (!container) return;
@@ -105,7 +97,6 @@
       </div>`;
   }
 
-  /* ===== Apply highlights ===== */
   function applyHighlights() {
     if (!currentBook) return;
     const book = BOOKS[currentBook];
@@ -129,7 +120,6 @@
     });
   }
 
-  /* ===== Highlight selection ===== */
   function highlightSelection(color) {
     if (!currentBook || !BOOKS[currentBook]) { alert('Открой доступную книгу.'); return; }
 
@@ -175,7 +165,6 @@
     renderSidebar();
   }
 
-  /* ===== Bookmark ===== */
   function bookmarkCurrentParagraph() {
     if (!currentBook || !BOOKS[currentBook]) { alert('Открой доступную книгу.'); return; }
     const paras = [...document.querySelectorAll('.reader-para')];
@@ -206,7 +195,6 @@
     alert('Добавлено в закладки! 🔖');
   }
 
-  /* ===== Sidebar ===== */
   function renderSidebar() {
     const bmList = $('bookmark-list');
     const hlList = $('highlight-list');
@@ -259,7 +247,6 @@
       }
     }
 
-    /* Клик по закладке/выделению → скролл к абзацу */
     document.querySelectorAll('.side-link').forEach((el) => {
       el.addEventListener('click', (e) => {
         if (e.target.closest('.side-remove')) return;
@@ -295,7 +282,6 @@
     });
   }
 
-  /* ===== Init ===== */
   document.addEventListener('DOMContentLoaded', () => {
     const bookSel = $('book-select');
     if (bookSel) {
