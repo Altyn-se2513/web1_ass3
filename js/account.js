@@ -1,7 +1,3 @@
-/* =========================================================
-   Digital Book Collection — Account (Firebase Auth), Streak & Shelf
-   Author: Altyn Abdinurova | Group: SE-2513
-   ========================================================= */
 import { auth } from './firebase.js';
 import {
   createUserWithEmailAndPassword,
@@ -12,7 +8,6 @@ import {
   updateProfile
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-/* ============ localStorage keys (streak / shelf / progress) ============ */
 const KEY_BOOKS = 'bc_books';
 const KEY_DAYS  = 'bc_readDays';
 const KEY_SHELF = 'bc_shelf';
@@ -30,7 +25,6 @@ const setShelf = (a) => localStorage.setItem(KEY_SHELF, JSON.stringify(a));
 const getExtras = () => JSON.parse(localStorage.getItem(KEY_EXTRA) || '{}');
 const setExtras = (o) => localStorage.setItem(KEY_EXTRA, JSON.stringify(o));
 
-/* ============ Streak ============ */
 function computeStreak(days) {
   if (!days.length) return { current: 0, best: 0 };
   const set = new Set(days);
@@ -98,13 +92,11 @@ function renderCalendar(days) {
   cal.innerHTML = html;
 }
 
-/* ============ Utils ============ */
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g,
     (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
 }
 
-/* ============ Shelf ============ */
 function renderShelf() {
   const shelf = getShelf();
   const box = $('my-shelf');
@@ -129,7 +121,6 @@ function renderShelf() {
   `).join('');
 }
 
-/* ============ Reading progress ============ */
 function renderBooks() {
   const books = getBooks();
   const box = $('my-books');
@@ -158,7 +149,6 @@ function renderBooks() {
   }).join('');
 }
 
-/* ============ Auth UI ============ */
 function showLoginTab() {
   const l = $('login-section');
   const r = $('register-section');
@@ -194,7 +184,6 @@ function showAuthError(which, msg) {
   el.hidden = false;
 }
 
-/* ============ Profile render ============ */
 function renderProfileForUser(user) {
   const authSec = $('auth-section');
   const prof = $('profile-section');
@@ -226,7 +215,6 @@ function renderProfileForUser(user) {
   }
 }
 
-/* ============ Bind events ============ */
 function bindEvents() {
   const tabLogin = $('tab-login');
   const tabRegister = $('tab-register');
@@ -406,7 +394,6 @@ function bindEvents() {
   }
 }
 
-/* ============ Init ============ */
 document.addEventListener('DOMContentLoaded', () => {
   renderStreak();
   renderShelf();
