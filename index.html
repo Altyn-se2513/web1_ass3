@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home — Digital Book Collection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-grid mx-auto">
+
+    <header id="main-header" class="px-3 px-lg-4 py-3">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary w-100" aria-label="Main navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <span class="fw-bold">📚 Book Collection</span>
+          </a>
+          <button class="navbar-toggler" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                  aria-controls="navbarMain" aria-expanded="false"
+                  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="2catalog.html">Catalog</a></li>
+              <li class="nav-item"><a class="nav-link" href="3product.html">Book Details</a></li>
+              <li class="nav-item"><a class="nav-link" href="4about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="5prices.html">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="6contact.html">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="7account.html">My Account</a></li>
+              <li class="nav-item"><a class="nav-link" href="8reader.html">Read</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <aside class="sidebar p-3 p-lg-4">
+      <div class="sidebar-block p-3">
+        <h3 class="mb-2">Featured Authors</h3>
+        <ul>
+          <li><a href="#authors">F. Scott Fitzgerald</a></li>
+          <li><a href="#authors">George Orwell</a></li>
+          <li><a href="#authors">J.R.R. Tolkien</a></li>
+          <li><a href="#authors">Jane Austen</a></li>
+          <li><a href="#authors">Tolstoy &amp; Dostoevsky</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-block p-3">
+        <h3 class="mb-2">Newsletter</h3>
+        <p class="small mb-2">Get weekly picks in your inbox.</p>
+        <form id="newsletter-form" action="#" method="post" class="p-0 m-0 border-0 shadow-none w-100">
+          <div class="input-group input-group-sm mb-2">
+            <label for="nl-email" class="visually-hidden">Email</label>
+            <input type="email" class="form-control" id="nl-email" placeholder="you@example.com" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-sm w-100">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="sidebar-block p-3">
+        <h3 class="mb-2">Start Reading 🔥</h3>
+        <p class="small mb-2">Log 20 min/day and grow your streak.</p>
+        <a href="7account.html" class="small fw-semibold d-inline-block mt-1">Open My Account →</a>
+      </div>
+    </aside>
+
+    <main class="main-content p-3 p-lg-4">
+      <div class="container-fluid px-0 px-sm-2">
+        <p class="breadcrumb mb-2"><a href="index.html">Home</a> / <span>Welcome</span></p>
+
+        <section class="hero p-4 my-4 mt-lg-4">
+          <div class="row g-4 align-items-center">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+              <img src="imgs/cat.jpg" alt="Library mascot cat in the bookstore welcome section" class="img-fluid rounded">
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+              <h1>Welcome to Our Digital Book Collection</h1>
+              <p>Discover your next favorite read in our curated collection of classic and modern literature.</p>
+              <div class="hero-actions d-flex gap-2 flex-wrap mt-3">
+                <a href="2catalog.html" class="btn btn-primary btn-lg">Browse Catalog</a>
+                <a href="7account.html" class="btn btn-outline-primary btn-lg">🔥 Start Reading Streak</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="row g-4 mb-4">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="info-card h-100 p-4">
+              <h3>Books Available</h3>
+              <span class="big-number">16</span>
+              <p class="mb-0">Curated titles in this demo catalog.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="info-card h-100 p-4">
+              <h3>Genres</h3>
+              <span class="big-number">5</span>
+              <p class="mb-0">Classics, sci-fi, fantasy, romance, history.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="info-card h-100 p-4">
+              <h3>Avg. Rating</h3>
+              <span class="big-number">4.7/5</span>
+              <p class="mb-0">Based on our catalog stats.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="mt-4 mt-lg-5">Our Three Pillars</h2>
+        <p>Три ключевых направления проекта. Эти карточки свёрстаны <strong>без Bootstrap</strong> — только CSS и media queries.</p>
+
+        <div class="custom-card-row my-4">
+          <article class="custom-card">
+            <img src="imgs/cat.jpg" alt="Friendly library mascot">
+            <h3>Curated Collection</h3>
+            <p>Every title is hand-picked by our editors — from Jazz Age classics to modern dystopias.</p>
+          </article>
+          <article class="custom-card">
+            <img src="imgs/gatsby.jpg" alt="The Great Gatsby book cover">
+            <h3>Daily Reading Habit</h3>
+            <p>Track your streak, set a 20-minute goal, and grow your habit day by day with our 🔥 widget.</p>
+          </article>
+          <article class="custom-card">
+            <img src="imgs/hobbit.jpg" alt="The Hobbit book cover">
+            <h3>Local Progress</h3>
+            <p>Read on phone, tablet, or laptop — your shelf and progress are saved locally on this device.</p>
+          </article>
+        </div>
+
+        <h2 class="mt-4 mt-lg-5">Popular Picks</h2>
+        <div class="row g-4 mb-4">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img src="imgs/gatsby.jpg" alt="The Great Gatsby book cover" class="card-img-top">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">The Great Gatsby</h5>
+                <p class="card-text flex-grow-1">A haunting story of the Jazz Age and the fragile American Dream.</p>
+                <a href="3product.html#gatsby" class="btn btn-primary align-self-start">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img src="imgs/1984.jpg" alt="1984 book cover" class="card-img-top">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">1984</h5>
+                <p class="card-text flex-grow-1">A dystopian novel about total surveillance, truth, and control.</p>
+                <a href="3product.html#1984" class="btn btn-primary align-self-start">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img src="imgs/mockingbird.jpg" alt="To Kill a Mockingbird book cover" class="card-img-top">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">To Kill a Mockingbird</h5>
+                <p class="card-text flex-grow-1">A powerful story of justice and inequality in the American South.</p>
+                <a href="3product.html#mockingbird" class="btn btn-primary align-self-start">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img src="imgs/hobbit.jpg" alt="The Hobbit book cover" class="card-img-top">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">The Hobbit</h5>
+                <p class="card-text flex-grow-1">An epic fantasy adventure through Middle-earth.</p>
+                <a href="3product.html#hobbit" class="btn btn-primary align-self-start">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="mt-4 mt-lg-5">Featured Collection</h2>
+        <div class="card-group mb-4">
+          <div class="card">
+            <img src="imgs/gatsby.jpg" class="card-img-top" alt="The Great Gatsby">
+            <div class="card-body">
+              <h5 class="card-title">The Great Gatsby</h5>
+              <p class="card-text">A classic of the Jazz Age.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/1984.jpg" class="card-img-top" alt="1984">
+            <div class="card-body">
+              <h5 class="card-title">1984</h5>
+              <p class="card-text">Dystopian masterpiece.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/hobbit.jpg" class="card-img-top" alt="The Hobbit">
+            <div class="card-body">
+              <h5 class="card-title">The Hobbit</h5>
+              <p class="card-text">Fantasy adventure.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="authors" class="mt-4 mt-lg-5">Meet Our Authors</h2>
+        <p>Three legendary writers whose stories shaped modern literature.</p>
+        <div class="author-grid my-4">
+          <div class="author-card p-3">
+            <h3>F. Scott Fitzgerald</h3>
+            <p class="author-meta">1896–1940 · American</p>
+            <p>Chronicler of the Jazz Age, famous for his lyrical prose.</p>
+            <a href="2catalog.html#classics" class="author-link">Browse his books →</a>
+          </div>
+          <div class="author-card p-3">
+            <h3>George Orwell</h3>
+            <p class="author-meta">1903–1950 · British</p>
+            <p>Writer on totalitarianism, truth, and language.</p>
+            <a href="2catalog.html#scifi" class="author-link">Browse his books →</a>
+          </div>
+          <div class="author-card p-3">
+            <h3>J.R.R. Tolkien</h3>
+            <p class="author-meta">1892–1973 · British</p>
+            <p>Father of modern fantasy. Created Middle-earth.</p>
+            <a href="2catalog.html#fantasy" class="author-link">Browse his books →</a>
+          </div>
+        </div>
+
+        <h2 class="mt-4 mt-lg-5">Gallery — From Our Shelves</h2>
+        <div class="gallery my-4">
+          <div class="gallery-item"><img src="imgs/cat.jpg" alt="Library mascot cat"><div class="caption">Library Mascot</div></div>
+          <div class="gallery-item"><img src="imgs/gatsby.jpg" alt="The Great Gatsby cover"><div class="caption">The Great Gatsby</div></div>
+          <div class="gallery-item"><img src="imgs/1984.jpg" alt="1984 cover"><div class="caption">1984</div></div>
+          <div class="gallery-item"><img src="imgs/logo.png" alt="Book Collection brand logo"><div class="caption">Our Brand</div></div>
+          <div class="gallery-item"><img src="imgs/hobbit.jpg" alt="The Hobbit cover"><div class="caption">Featured Fantasy</div></div>
+          <div class="gallery-item"><img src="imgs/pride.jpg" alt="Pride and Prejudice cover"><div class="caption">Pride &amp; Prejudice</div></div>
+          <div class="gallery-item"><img src="imgs/contactlogo.jpg" alt="Contact support icon"><div class="caption">Contact Us</div></div>
+          <div class="gallery-item"><img src="imgs/gift_card_logo.png" alt="Gift card option"><div class="caption">Gift Cards</div></div>
+          <div class="gallery-item"><img src="imgs/mockingbird.jpg" alt="To Kill a Mockingbird cover"><div class="caption">Mockingbird</div></div>
+          <div class="gallery-item"><img src="imgs/catcher.jpg" alt="The Catcher in the Rye cover"><div class="caption">Catcher in the Rye</div></div>
+          <div class="gallery-item"><img src="imgs/lotr.jpg" alt="The Lord of the Rings cover"><div class="caption">Lord of the Rings</div></div>
+          <div class="gallery-item"><img src="imgs/harry.jpg" alt="Harry Potter cover"><div class="caption">Harry Potter</div></div>
+        </div>
+
+        <h2 class="mt-4 mt-lg-5">Featured Books Carousel</h2>
+        <div id="bookCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#bookCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#bookCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#bookCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#bookCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#bookCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#bookCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#bookCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#bookCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#bookCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          </div>
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="imgs/gatsby.jpg" class="d-block w-100 carousel-img" alt="The Great Gatsby">
+              <div class="carousel-caption d-none d-md-block p-3"><h5>The Great Gatsby</h5><p class="mb-0">F. Scott Fitzgerald</p></div>
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/1984.jpg" class="d-block w-100 carousel-img" alt="1984">
+              <div class="carousel-caption d-none d-md-block p-3"><h5>1984</h5><p class="mb-0">George Orwell</p></div>
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/mockingbird.jpg" class="d-block w-100 carousel-img" alt="To Kill a Mockingbird">
+              <div class="carousel-caption d-none d-md-block p-3"><h5>To Kill a Mockingbird</h5><p class="mb-0">Harper Lee</p></div>
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/hobbit.jpg" class="d-block w-100 carousel-img" alt="The Hobbit">
+              <div class="carousel-caption d-none d-md-block p-3"><h5>The Hobbit</h5><p class="mb-0">J.R.R. Tolkien</p></div>
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/pride.jpg" class="d-block w-100 carousel-img" alt="Pride and Prejudice">
+              <div class="carousel-caption d-none d-md-block p-3"><h5>Pride and Prejudice</h5><p class="mb-0">Jane Austen</p></div>
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/lotr.jpg" class="d-block w-100 carousel-img" alt="The Lord of the Rings">
+              <div class="carousel-caption d-none d-md-block p-3"><h5>The Lord of the Rings</h5><p class="mb-0">J.R.R. Tolkien</p></div>
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/harry.jpg" class="d-block w-100 carousel-img" alt="Harry Potter">
+              <div class="carousel-caption d-none d-md-block p-3"><h5>Harry Potter</h5><p class="mb-0">J.K. Rowling</p></div>
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/catcher.jpg" class="d-block w-100 carousel-img" alt="The Catcher in the Rye">
+              <div class="carousel-caption d-none d-md-block p-3"><h5>The Catcher in the Rye</h5><p class="mb-0">J.D. Salinger</p></div>
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/cat.jpg" class="d-block w-100 carousel-img" alt="Library Mascot">
+              <div class="carousel-caption d-none d-md-block p-3"><h5>Library Mascot</h5><p class="mb-0">Book Collection</p></div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <h2 class="mt-4 mt-lg-5">Why Choose Us?</h2>
+        <div class="row g-4 mb-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="info-card h-100 p-4"><h3>Worldwide Library</h3><p class="mb-0">Thousands of titles across every genre — all in one place.</p></div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="info-card h-100 p-4"><h3>Read Anywhere</h3><p class="mb-0">Phone, tablet, or laptop — your shelf, streak, and progress are saved locally on this device.</p></div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="info-card h-100 p-4"><h3>Reader Tools</h3><p class="mb-0">Highlight text, bookmark paragraphs, and keep notes in your browser. Audio is not part of this demo.</p></div>
+          </div>
+        </div>
+
+        <h2 class="mt-4 mt-lg-5">Track Your Reading Streak 🔥</h2>
+        <div class="streak-hero p-4 my-4">
+          <div class="streak-hero-flame">🔥</div>
+          <div class="streak-hero-count"><span id="hero-streak-preview">0</span> day streak</div>
+          <a href="7account.html" class="btn btn-warning btn-lg ms-auto">Open My Account →</a>
+        </div>
+
+        <div class="see-also my-4 p-3 p-lg-4">
+          <h3 class="mb-2">See Also</h3>
+          <ul class="mb-0">
+            <li><a href="2catalog.html">Browse the full catalog</a></li>
+            <li><a href="3product.html">Read book details and quotes</a></li>
+            <li><a href="5prices.html">Compare membership plans</a></li>
+            <li><a href="6contact.html">Contact our support team</a></li>
+            <li><a href="7account.html">Start tracking your reading streak</a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="p-4">
+      <p class="mb-1">Team Members:</p>
+      <ul><li>Altyn Abdinurova</li></ul>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    try {
+      const days = JSON.parse(localStorage.getItem('bc_readDays') || '[]');
+      const set = new Set(days);
+      let current = 0;
+      let d = new Date();
+      if (!set.has(d.toISOString().slice(0,10))) d.setDate(d.getDate() - 1);
+      while (set.has(d.toISOString().slice(0,10))) { current++; d.setDate(d.getDate() - 1); }
+      const el = document.getElementById('hero-streak-preview');
+      if (el) el.textContent = current;
+    } catch (e) {}
+  </script>
+  <script>
+    const nf = document.getElementById('newsletter-form');
+    if (nf) {
+      nf.addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert('✅ Demo form — подписка НЕ оформлена. Это учебный проект.');
+        this.reset();
+      });
+    }
+  </script>
+</body>
+</html>
